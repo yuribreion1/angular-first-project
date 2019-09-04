@@ -1,6 +1,11 @@
+<label for="">Server name</label>
+<input type="text" class="form-control" name="" id="" (input)="onUpdateServerName($event)">
+<p>{{ serverName }}</p>
+
 <!-- Using binding to get attribute from componentV -->
-<button 
-    class="btn btn-primary" 
-    [disabled]="!allowNewServer">Add Server</button>
+<button
+    class="btn btn-primary"
+    [disabled]="!allowNewServer"
+    (click)="onCreateServer()">Add Server</button>
     <!-- Get the property from the function of the component -->
-    <p [innerText]="allowNewServer"></p>
+    <p>{{ serverCreationgStatus }}</p>
