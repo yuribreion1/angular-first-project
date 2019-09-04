@@ -1,1 +1,6 @@
-<p>servers works!</p>
+<!-- Using binding to get attribute from componentV -->
+<button 
+    class="btn btn-primary" 
+    [disabled]="!allowNewServer">Add Server</button>
+    <!-- Get the property from the function of the component -->
+    <p [innerText]="allowNewServer"></p>
