@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // Inicializamos o campo passado no HTML
-  name = '';
+  
 }
