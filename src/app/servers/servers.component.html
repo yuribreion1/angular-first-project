@@ -1,4 +1,5 @@
 <label>Server name</label>
+<!-- Receive the two way binding -->
 <input type="text" class="form-control" [(ngModel)]="serverName">
 <p>{{ serverName }}</p>
 
@@ -7,5 +8,6 @@
     class="btn btn-primary"
     [disabled]="!allowNewServer"
     (click)="onCreateServer()">Add Server</button>
-    <!-- Get the property from the function of the component -->
-    <p>{{ serverCreationgStatus }}</p>
+
+    <!-- With directives we using the button to trigger the function -->
+    <p *ngIf="serverCreated">Server is created, server name is {{ serverName }}</p>
